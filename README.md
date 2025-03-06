@@ -1,59 +1,98 @@
-# AngularPipeExamples
+# Angular Pipe Examples
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This project is a comprehensive example demonstrating how pipes are used in Angular. It showcases various Angular pipes using characters from "The Lord of the Rings".
 
-## Development server
+![Angular Pipe Examples](https://angular.io/assets/images/logos/angular/angular.svg)
 
-To start a local development server, run:
+## 🚀 Features
+
+- **String Pipes**: uppercase, lowercase, titlecase
+- **Number Pipes**: number, decimal, percent, currency
+- **Date Pipes**: date (various formats)
+- **Object & Array Pipes**: json, slice, keyvalue
+- **Async Pipe**: Working with Observables
+- **Chaining Pipes**: Using multiple pipes together
+- **Boolean Pipes**: Custom boolean value formatting
+- **Custom Pipes**: RaceIcon and RingBearer custom pipes
+- **Pure vs Impure Pipes**: Interactive demo showing differences
+
+## 📋 Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Angular CLI (v16 or higher)
+
+## 🔧 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/sametacar/angular-pipe-examples.git
+
+# Navigate to the project directory
+cd angular-pipe-examples
+
+# Install dependencies
+npm install
+
+# Start the development server
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to `http://localhost:4200/` to see the application.
 
-## Code scaffolding
+## 📚 Pipe Examples
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### String Pipes
 
-```bash
-ng generate component component-name
-```
+- **uppercase**: Converts text to uppercase
+- **lowercase**: Converts text to lowercase
+- **titlecase**: Capitalizes the first letter of each word
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Date Pipes
 
-```bash
-ng generate --help
-```
+- **date**: Displays dates in various formats (short, medium, long, custom)
 
-## Building
+### Number Pipes
 
-To build the project run:
+- **number**: Formats numbers
+- **decimal**: Formats decimal numbers
+- **percent**: Displays numbers as percentages
+- **currency**: Currency formatting
 
-```bash
-ng build
-```
+### Object & Array Pipes
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **json**: Displays objects in JSON format
+- **slice**: Slices arrays
+- **keyvalue**: Displays objects as key-value pairs
 
-## Running unit tests
+### Async Pipe
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Working with Observable data
 
-```bash
-ng test
-```
+### Pure vs Impure Pipes
 
-## Running end-to-end tests
+- Pure pipes only execute when the input reference changes
+- Impure pipes execute on every change detection cycle
 
-For end-to-end (e2e) testing, run:
+## 🎨 Custom Pipes
 
-```bash
-ng e2e
-```
+This project includes two custom pipes:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. **RingBearer Pipe**: Shows whether a character is a ring bearer or not
+2. **RaceIcon Pipe**: Displays an icon based on the character's race
 
-## Additional Resources
+## 🧪 Pure vs Impure Pipe Demo
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The project includes an interactive demo showing the difference between pure and impure pipes. This demo demonstrates:
+
+- Pure pipes only execute when the input reference changes
+- Impure pipes execute on every change detection cycle
+- Pure pipes don't update when object content changes but the reference remains the same
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+This project was created to showcase Angular's powerful pipe system. If you'd like to contribute, please submit a pull request or open an issue.
