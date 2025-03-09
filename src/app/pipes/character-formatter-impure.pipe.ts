@@ -23,15 +23,15 @@ export class CharacterFormatterImpurePipe implements PipeTransform {
 
     let result = `${character.name}`;
 
-    if (formatOptions['showRace'] && character.race) {
+    if (formatOptions['showRace'] === 'true' && character.race) {
       result += ` the ${character.race}`;
     }
 
-    if (formatOptions['showAge'] && character.age) {
+    if (formatOptions['showAge'] === 'true' && character.age) {
       result += `, age ${character.age}`;
     }
 
-    if (formatOptions['showWeapon'] && character.weapon) {
+    if (formatOptions['showWeapon'] === 'true' && character.weapon) {
       result += `, wielding ${character.weapon}`;
     }
 

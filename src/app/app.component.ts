@@ -109,7 +109,6 @@ export class AppComponent {
 
   // Current date for date pipe examples
   currentDate = new Date();
-  registerDate = new Date('2024-03-19T10:30:00');
 
   // Currency example
   weaponValue = 150.75;
